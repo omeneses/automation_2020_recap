@@ -22,7 +22,7 @@ class TestTemplate(unittest.TestCase):
         """
 
         self.driver = webdriver.Chrome()
-        self.driver.get("https://en.wikipedia.org/wiki/Main_Page")
+        self.driver.get("https://learn.letskodeit.com/p/practice")
 
     def tearDown(self):
         """
