@@ -1,0 +1,7 @@
+chromedriver
+geckodriver
+*.pyc
+*.log
+.vscode/
+.DS_Store
+venv/
