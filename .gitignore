@@ -5,4 +5,4 @@ geckodriver
 .vscode/
 .DS_Store
 venv/
-.idea
+.idea/
