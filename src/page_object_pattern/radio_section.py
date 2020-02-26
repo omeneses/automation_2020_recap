@@ -9,6 +9,7 @@ class declaration.
 from src.page_object_pattern.base_page import BasePage
 
 
+
 class Practice(BasePage):
     """
     Home page
@@ -22,5 +23,3 @@ class Practice(BasePage):
 
     def get_title_text(self):
         return self._driver.find_element_by_xpath(Practice.RADIO_SECTION_TEXT).text
-
-    

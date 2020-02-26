@@ -7,6 +7,7 @@ Description: Test module for module src/page_object_patter/base_page.py
 
 from src.page_object_pattern.radio_section import Practice
 from src.page_object_pattern.test_template import TestTemplate
+import time
 import unittest
 
 
@@ -17,7 +18,7 @@ class TestHomePage(TestTemplate):
     def test_verify_title(self):
         main_page = Practice(self.driver)
         print(main_page.get_title_text())
-
+        time.sleep(4)
 
     
 
