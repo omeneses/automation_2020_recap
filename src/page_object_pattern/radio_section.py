@@ -19,8 +19,18 @@ class Practice(BasePage):
     LOGIN = 'pt-login'
     MAIN_LINK ='ca-nstab-main'
     RADIO_SECTION_TEXT = '//*[@id="radio-btn-example"]/fieldset/legend'
+    BMW = '//*[@id="bmwradio"]'
+    BENZ = '//*[@id="benzradio"]'
+    HONDA = '//*[@id="hondaradio"]'
 
     def get_title_text(self):
         return self._driver.find_element_by_xpath(Practice.RADIO_SECTION_TEXT).text
-
     
+    def get_check_bmw(self):
+        self._driver.find_element_by_id('bmwradio').click()
+        
+   
+    
+    """    
+    return self._driver.find_element_by_xpath(Practice.BMW).click()
+    """
