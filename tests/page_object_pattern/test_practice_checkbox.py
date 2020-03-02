@@ -17,20 +17,30 @@ class TestHomePage(TestTemplate):
     def test_check_option_bmw(self):
         checkbox = Checkbox(self.driver)
         print(checkbox.get_title_text())
-        checkbox.check_element(checkbox.CHECKBOX_BENZ)
+        checkbox.check_element(checkbox.CHECKBOX_BMW)
+        checkbox.element_ischecked(checkbox.CHECKBOX_BMW)
         time.sleep(4)
 
     def test_check_option_benz(self):
         checkbox = Checkbox(self.driver)
         print(checkbox.get_title_text())
         checkbox.check_benz()
+        checkbox.benz_ischecked()
         time.sleep(4)
 
     def test_check_option_honda(self):
         checkbox = Checkbox(self.driver)
         print(checkbox.get_title_text())
         checkbox.check_honda()
+        checkbox.honda_ischecked()
         time.sleep(4)
+
+    def test_check_all_options(self):
+        checkbox = Checkbox(self.driver)
+        print(checkbox.get_title_text())
+        checkbox.select_all_checkboxes()
+        checkbox.verify_all_checkboxes()
+        time.sleep(4)    
 
 
     
